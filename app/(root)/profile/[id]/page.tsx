@@ -7,6 +7,8 @@ import Image from "next/image";
 import { profileTabs } from "@/constants";
 import ThreadsTab from "@/components/shared/ThreadsTab";
 
+// export const revalidate = 0;
+
 async function Page({ params }: { params: { id: string } }) {
   const user = await currentUser();
 
